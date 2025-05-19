@@ -1,0 +1,93 @@
+.login-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f1f5f9 60%, #bbf7d0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-paper {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 6px 36px 0 rgba(30,41,59,0.13);
+  padding: 48px 36px 40px 36px;
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.diary-logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #16a34a 60%, #22d3ee 100%);
+  border-radius: 18px 18px 38px 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(22,163,74,0.18);
+}
+.login-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 0.2em;
+  letter-spacing: -2px;
+}
+.login-desc {
+  color: #64748b;
+  font-size: 1.05rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.login-form input {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 1.05rem;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+.login-form input:focus {
+  outline: none;
+  border: 1.5px solid #16a34a;
+}
+.login-form button {
+  background: linear-gradient(90deg, #16a34a 70%, #4ade80 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(30,41,59,0.06);
+}
+.login-form button:hover {
+  background: linear-gradient(90deg, #15803d 70%, #22d3ee 100%);
+}
+.login-error {
+  color: #e11d48;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+.login-footer {
+  margin-top: 32px;
+  font-size: 0.98rem;
+  color: #888;
+  text-align: center;
+}
+.login-footer b {
+  color: #16a34a;
+}

@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Pretendard', 'Noto Sans KR', Arial, sans-serif;
+  background: linear-gradient(135deg, #f1f5f9 60%, #bbf7d0 100%);
+}
+
+.app-container {
+  max-width: 640px;
+  margin: 52px auto 0 auto;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 6px 36px 0 rgba(30,41,59,0.13);
+  padding: 48px 36px 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 0.2em;
+  letter-spacing: -2px;
+}
+
+.header p {
+  color: #64748b;
+  font-size: 1.13rem;
+  margin-bottom: 0;
+}
+
+.diary-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 24px 18px 18px 18px;
+  box-shadow: 0 2px 12px 0 rgba(22,163,74,0.06);
+}
+
+.diary-form input,
+.diary-form textarea {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 1.05rem;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+
+.diary-form input:focus,
+.diary-form textarea:focus {
+  outline: none;
+  border: 1.5px solid #16a34a;
+}
+
+.diary-form button {
+  background: linear-gradient(90deg, #16a34a 70%, #4ade80 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(30,41,59,0.06);
+}
+
+.diary-form button:hover {
+  background: linear-gradient(90deg, #15803d 70%, #22d3ee 100%);
+}
+
+.diary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.diary-card {
+  background: #f1f5f9;
+  border-radius: 18px;
+  padding: 22px 28px 18px 28px;
+  box-shadow: 0 2px 12px 0 rgba(30,41,59,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.diary-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.23rem;
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.diary-card .content {
+  font-size: 1.08rem;
+  color: #334155;
+  margin-bottom: 8px;
+  white-space: pre-line;
+}
+
+.diary-card .meta {
+  color: #64748b;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background: #fff;
+  color: #16a34a;
+  border: 1.5px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-size: 1.02rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.actions button:hover {
+  background: #16a34a;
+  color: #fff;
+  border: 1.5px solid #16a34a;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 16px 4vw;
+  }
+}
