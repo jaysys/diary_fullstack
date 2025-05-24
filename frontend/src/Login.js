@@ -48,7 +48,7 @@ function Login({ onLogin }) {
           {error && <div className="login-error">{error}</div>}
         </form>
         <div className="login-footer">
-          <div>관리자 계정: <b>jay</b> / <b>234567</b></div>
+          <div>관리자 계정: <b>jay</b> / <b>1234567</b></div>
         </div>
       </div>
     </div>
