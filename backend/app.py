@@ -41,7 +41,7 @@ def init_db():
         c.execute('SELECT * FROM users WHERE username=?', ('jay',))
         if not c.fetchone():
             c.execute('INSERT INTO users (username, password, is_admin) VALUES (?, ?, ?)',
-                      ('jay', hash_password('234567'), 1))
+                      ('jay', hash_password('1234567'), 1))
         conn.commit()
 
 
